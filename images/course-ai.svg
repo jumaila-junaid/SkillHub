@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="bgAi" x1="0" y1="0" x2="400" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#eff6ff"/>
+      <stop offset="100%" stop-color="#e0e7ff"/>
+    </linearGradient>
+    <linearGradient id="nodeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="240" fill="url(#bgAi)"/>
+
+  <!-- Neural Network Connections -->
+  <!-- Layer 1 Nodes (x=110) -->
+  <!-- Layer 2 Nodes (x=200) -->
+  <!-- Layer 3 Nodes (x=290) -->
+
+  <!-- Interconnections Layer 1 -> Layer 2 -->
+  <line x1="110" y1="70" x2="200" y2="60" stroke="#a5b4fc" stroke-width="1.5"/>
+  <line x1="110" y1="70" x2="200" y2="120" stroke="#a5b4fc" stroke-width="1.5"/>
+  <line x1="110" y1="70" x2="200" y2="180" stroke="#a5b4fc" stroke-width="1.5"/>
+
+  <line x1="110" y1="120" x2="200" y2="60" stroke="#818cf8" stroke-width="1.8"/>
+  <line x1="110" y1="120" x2="200" y2="120" stroke="#4f46e5" stroke-width="2.2"/>
+  <line x1="110" y1="120" x2="200" y2="180" stroke="#818cf8" stroke-width="1.8"/>
+
+  <line x1="110" y1="170" x2="200" y2="60" stroke="#a5b4fc" stroke-width="1.5"/>
+  <line x1="110" y1="170" x2="200" y2="120" stroke="#a5b4fc" stroke-width="1.5"/>
+  <line x1="110" y1="170" x2="200" y2="180" stroke="#a5b4fc" stroke-width="1.5"/>
+
+  <!-- Interconnections Layer 2 -> Layer 3 -->
+  <line x1="200" y1="60" x2="290" y2="95" stroke="#818cf8" stroke-width="1.8"/>
+  <line x1="200" y1="60" x2="290" y2="145" stroke="#a5b4fc" stroke-width="1.5"/>
+
+  <line x1="200" y1="120" x2="290" y2="95" stroke="#4f46e5" stroke-width="2.5"/>
+  <line x1="200" y1="120" x2="290" y2="145" stroke="#4f46e5" stroke-width="2.5"/>
+
+  <line x1="200" y1="180" x2="290" y2="95" stroke="#a5b4fc" stroke-width="1.5"/>
+  <line x1="200" y1="180" x2="290" y2="145" stroke="#818cf8" stroke-width="1.8"/>
+
+  <!-- Nodes Layer 1 -->
+  <circle cx="110" cy="70" r="10" fill="#ffffff" stroke="#4f46e5" stroke-width="3"/>
+  <circle cx="110" cy="120" r="12" fill="url(#nodeGrad)"/>
+  <circle cx="110" cy="170" r="10" fill="#ffffff" stroke="#4f46e5" stroke-width="3"/>
+
+  <!-- Nodes Layer 2 (Hidden Layer) -->
+  <circle cx="200" cy="60" r="11" fill="#ffffff" stroke="#2563eb" stroke-width="3"/>
+  <circle cx="200" cy="120" r="15" fill="url(#nodeGrad)"/>
+  <circle cx="200" cy="180" r="11" fill="#ffffff" stroke="#2563eb" stroke-width="3"/>
+
+  <!-- Nodes Layer 3 (Output Layer) -->
+  <circle cx="290" cy="95" r="12" fill="url(#nodeGrad)"/>
+  <circle cx="290" cy="145" r="12" fill="#ffffff" stroke="#4f46e5" stroke-width="3"/>
+
+  <!-- Sparkle / Pulse Accents -->
+  <polygon points="200,108 203,117 212,120 203,123 200,132 197,123 188,120 197,117" fill="#fde047"/>
+
+  <!-- Floating Badge: AI & Deep Learning -->
+  <g filter="drop-shadow(0 4px 6px rgba(0,0,0,0.08))">
+    <rect x="135" y="185" width="130" height="42" rx="8" fill="#ffffff" stroke="#c7d2fe" stroke-width="1.5"/>
+    <text x="148" y="203" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#0f172a">AI &amp; Neural Nets</text>
+    <text x="148" y="217" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#4f46e5">Machine Learning</text>
+  </g>
+</svg>

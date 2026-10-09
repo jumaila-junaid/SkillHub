@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="bgDb" x1="0" y1="0" x2="400" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="100%" stop-color="#fef3c7"/>
+    </linearGradient>
+    <linearGradient id="dbGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="240" fill="url(#bgDb)"/>
+
+  <!-- Database Cylinders -->
+  <g filter="drop-shadow(0 8px 16px rgba(180,83,9,0.15))">
+    <!-- Cylinder 1 (Top) -->
+    <path d="M120 70 C120 58, 200 58, 200 70 C200 82, 120 82, 120 70 Z" fill="#fde68a" stroke="#d97706" stroke-width="2"/>
+    <path d="M120 70 V105 C120 117, 200 117, 200 105 V70" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <path d="M120 105 C120 117, 200 117, 200 105" stroke="#d97706" stroke-width="2" fill="none"/>
+    <circle cx="135" cy="90" r="3" fill="#16a34a"/>
+    <line x1="145" y1="90" x2="185" y2="90" stroke="#b45309" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Cylinder 2 (Middle) -->
+    <path d="M120 105 V140 C120 152, 200 152, 200 140 V105" fill="#fde68a" stroke="#d97706" stroke-width="2"/>
+    <path d="M120 140 C120 152, 200 152, 200 140" stroke="#d97706" stroke-width="2" fill="none"/>
+    <circle cx="135" cy="125" r="3" fill="#16a34a"/>
+    <line x1="145" y1="125" x2="185" y2="125" stroke="#b45309" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Cylinder 3 (Bottom) -->
+    <path d="M120 140 V175 C120 187, 200 187, 200 175 V140" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <circle cx="135" cy="160" r="3" fill="#16a34a"/>
+    <line x1="145" y1="160" x2="185" y2="160" stroke="#b45309" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- SQL Table Card on Right -->
+  <rect x="225" y="55" width="140" height="130" rx="10" fill="#ffffff" stroke="#fcd34d" stroke-width="1.5"/>
+  <rect x="225" y="55" width="140" height="26" rx="10" fill="#fef3c7"/>
+  <path d="M225 71h140v10H225z" fill="#fef3c7"/>
+  <line x1="225" y1="81" x2="365" y2="81" stroke="#fcd34d" stroke-width="1"/>
+  <text x="238" y="72" font-family="Consolas, monospace" font-size="10" font-weight="700" fill="#b45309">TABLE: users</text>
+
+  <!-- Table rows -->
+  <line x1="225" y1="105" x2="365" y2="105" stroke="#f1f5f9" stroke-width="1"/>
+  <text x="235" y="98" font-family="Consolas, monospace" font-size="9" font-weight="600" fill="#475569">id : INT [PK]</text>
+  
+  <line x1="225" y1="128" x2="365" y2="128" stroke="#f1f5f9" stroke-width="1"/>
+  <text x="235" y="121" font-family="Consolas, monospace" font-size="9" font-weight="600" fill="#475569">name : VARCHAR</text>
+
+  <line x1="225" y1="151" x2="365" y2="151" stroke="#f1f5f9" stroke-width="1"/>
+  <text x="235" y="144" font-family="Consolas, monospace" font-size="9" font-weight="600" fill="#475569">role : TEXT</text>
+
+  <text x="235" y="168" font-family="Consolas, monospace" font-size="9" font-weight="700" fill="#2563eb">JOIN &amp; QUERY</text>
+
+  <!-- Relational Connecting Arrow -->
+  <path d="M200 120 H220" stroke="#d97706" stroke-width="2" stroke-dasharray="2 2"/>
+  <polygon points="220,117 225,120 220,123" fill="#d97706"/>
+
+  <!-- Floating Badge: SQL & NoSQL -->
+  <g filter="drop-shadow(0 4px 6px rgba(0,0,0,0.08))">
+    <rect x="40" y="145" width="70" height="42" rx="8" fill="#ffffff" stroke="#fcd34d" stroke-width="1.5"/>
+    <text x="50" y="164" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#0f172a">SQL</text>
+    <text x="50" y="177" font-family="system-ui, sans-serif" font-size="9" font-weight="600" fill="#d97706">Relational</text>
+  </g>
+</svg>
