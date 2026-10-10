@@ -213,3 +213,4 @@ In keeping with honest engineering practices, this project was developed using h
 - **Role**: Junior Full Stack Developer Portfolio Project
 - **Typography**: [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans) via Google Fonts
 - **Icons**: [Bootstrap Icons](https://icons.getbootstrap.com/)
+- **LLicense**: Open for personal and educational demonstration
